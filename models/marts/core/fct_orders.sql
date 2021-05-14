@@ -12,12 +12,12 @@ payments as (
 final as (
 
 SELECT 
-payments.orderid,
+payments.order_id,
 customers.customer_id,
 payments.amount
 
 FROM payments
-JOIN customers ON payments.id=customers.customer_id
+JOIN customers ON payments.payment_id=customers.customer_id
 
 
 )
